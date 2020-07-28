@@ -1,0 +1,95 @@
+//* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* Positioning Lap háttérszín, méret körbe kisebb mint az oldal*/
+
+.profile-card {
+	background-color: hsla(60, 100%, 50%, .4);
+  width: auto;
+  max-width: calc(100vw - 10px);	
+	max-height: calc(100vw - 10px);
+	
+}
+/*foto szélessége az oldal 30%-a...*/
+img {
+  width: 30%;
+  height: auto;
+	
+}
+
+h1 {
+	font-size: 50px;
+	font-family: Blackadder ITC;
+
+}
+h2 {
+  font-size: 35px;
+	font-family: blackadder ITC;
+}
+
+.content {
+  background-color: hsla(120, 100%, 50%, .4);
+	font-family: blackadder ITC;
+	font-size: 30px;
+}
+
+.profile-image {
+  background-color: hsla(120, 100%, 50%, .3);
+  
+}
+
+.name-headline {
+  background-color: hsla(120, 100%, 50%, .3);
+}
+
+.about {
+  background-color: hsla(120, 100%, 50%, .2);
+}
+
+.links {
+  background-color: hsla(120, 100%, 50%, .2);
+}
+
+.head, .links {
+  text-align: center;
+}
+
+/* Contact links: pontok eltüntetése és középre helyezés*/
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
+}
+
+/*szellősebb, arányos elosztás*/
+.head, .about {
+  margin-bottom: 10%;
+}
+
+.content {
+  padding: 5% 5%;
+}
+
+/*háttérkép hozzáadása*/
+
+body {
+  background: url('assets/naplemente.jpg') no-repeat center center fixed;
+  
+}
+
+/*képet körbe fekete keret*/
+img {
+  padding: 1px;
+  background-color: #666;
+}
+/*a fotó kiemelkedik mikor az egér fölé kerül*/
+img:hover {
+  transform: scale(1.1);
+}
